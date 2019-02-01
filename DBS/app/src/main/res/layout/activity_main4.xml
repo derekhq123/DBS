@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main4Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Investment"
+        android:id="@+id/InvestmentTitle"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+
+
+    <ListView
+        android:id="@+id/BoughtList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productTitle"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deposit"
+        android:text="S$9000.34"
+        android:visibility="invisible"
+        android:layout_below="@+id/InvestmentTitle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"
+        android:layout_below="@+id/deposit"
+        android:layout_alignParentLeft="true"
+        android:text="show"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hide"
+        android:layout_below="@+id/deposit"
+        android:layout_alignParentRight="true"
+        android:text="hide"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productTitle"
+        android:layout_below="@+id/show"
+        android:text="Product List"
+        android:gravity="center"/>
+
+    <android.support.v4.view.ViewPager
+        android:id= "@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BoughtList"
+        >
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

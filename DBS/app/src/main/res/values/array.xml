@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="selections">
+        <item>Account Number:0000000000</item>
+        <item>Account Number:0000000001</item>
+        <item>Account Number:0000000002</item>
+    </string-array>
+    <string-array name="myaccount">
+        <item>Your Account:0000000003</item>
+        <item>Your Account:0000000004</item>
+        <item>Your Account:0000000005</item>
+    </string-array>
+</resources>

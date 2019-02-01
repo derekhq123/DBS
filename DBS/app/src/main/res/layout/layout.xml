@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/myaccount"
+        android:layout_margin="10dp"
+        android:id="@+id/myaccountinfo"
+        ></Spinner>
+    <Spinner
+        android:id="@+id/accountInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/selections"
+        android:layout_below="@id/myaccountinfo"
+        android:layout_margin="10dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount"
+        android:layout_below="@id/accountInfo"
+        android:hint="Enter your tranfer amount"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Add"
+        android:text="Add"
+        android:layout_below="@id/amount"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Delete"
+        android:text="Delete"
+        android:layout_below="@+id/amount"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>
